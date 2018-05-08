@@ -41,5 +41,6 @@ def get_average_age_for_season(data, season)
         collect << person["age"]
     end
   end
- collect.inject {|sum, el| sum + el}.to_f / collect.length
+ average = collect.inject {|sum, el| sum + el}.to_f / collect.length
+ average
 end
