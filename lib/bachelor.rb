@@ -13,10 +13,7 @@ def get_contestant_name(data, occupation)
     people.each do |data|
       their_job = data["occupation"]
       their_name = data["name"]
-
-      if their_job == occupation
-        return their_name
-      end
+      return their_name if their_job == occupation
     end
   end
 
