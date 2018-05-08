@@ -8,7 +8,10 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  # takes in the data hash and an occupation string and returns the name of the woman who has that occupation.
+  data[occupation].each do |variable|
+    binding.pry
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
