@@ -21,7 +21,7 @@ def get_contestant_name(data, occupation)
   end
 
   if condition
-    
+
   end
 end
 
