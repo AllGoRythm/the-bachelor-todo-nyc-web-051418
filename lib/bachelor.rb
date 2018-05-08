@@ -23,6 +23,7 @@ def count_contestants_by_hometown(data, hometown)
       collect_towns << data["hometown"]
     end
   end
+  collect_towns
 end
 
 def get_occupation(data, hometown)
