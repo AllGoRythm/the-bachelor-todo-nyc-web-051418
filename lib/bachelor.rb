@@ -39,7 +39,6 @@ def get_average_age_for_season(data, season)
   data.each do |season, people|
     people.collect do |person|
         collect << person["age"]
-        binding.pry
     end
   end
   collect
