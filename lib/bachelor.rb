@@ -20,7 +20,7 @@ def count_contestants_by_hometown(data, hometown)
   collect_towns = []
   data.each do |season, people|
     people.collect do |data|
-      data["hometown"]
+      collect_towns << data["hometown"]
     end
   end
 end
