@@ -42,5 +42,5 @@ def get_average_age_for_season(data, season)
         collect << person["age"]
     end
   end
-  average = total_collect.to_f / collect.length
+  average = total_collect / collect.length
 end
