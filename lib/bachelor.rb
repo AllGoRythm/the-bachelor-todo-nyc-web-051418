@@ -12,6 +12,7 @@ def get_contestant_name(data, occupation)
   data.each do |season, people|
     people.each do |data|
       data["occupation"]
+      binding.pry
     end
   end
 
