@@ -18,7 +18,7 @@ end
 def count_contestants_by_hometown(data, hometown)
   # should return a counter of the number of contestants who are from that hometown
   data.each do |season, people|
-    people["hometown"].collect do |var|
+    people.collect do |var|
     binding.pry
     end
   end
