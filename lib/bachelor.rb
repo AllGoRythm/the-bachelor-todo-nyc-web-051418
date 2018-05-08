@@ -24,6 +24,7 @@ def count_contestants_by_hometown(data, hometown)
     end
   end
   collect_towns
+  binding.pry
 end
 
 def get_occupation(data, hometown)
