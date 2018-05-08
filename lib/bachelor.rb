@@ -38,7 +38,7 @@ def get_average_age_for_season(data, season)
   collect = []
   data.each do |season, people|
     people.collect do |person|
-        collect << person["age"]
+        collect << person["age"].to_f
     end
   end
   collect_average
