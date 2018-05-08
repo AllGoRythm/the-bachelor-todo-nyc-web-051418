@@ -9,7 +9,7 @@ end
 
 def get_contestant_name(data, occupation)
   # takes in the data hash and an occupation string and returns the name of the woman who has that occupation.
-  data[season][occupation].each do |person, person2|
+  data.each do |k, v|
     binding.pry
   end
 end
