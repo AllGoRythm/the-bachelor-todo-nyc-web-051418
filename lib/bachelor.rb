@@ -19,12 +19,10 @@ def count_contestants_by_hometown(data, hometown)
   # should return a counter of the number of contestants who are from that hometown
   collect_towns = []
   data.each do |season, people|
-    people.collect do |data|
-      collect_towns << data["hometown"]
+    people.collect do |person|
+      binding.pry
     end
   end
-  collect_towns
-  binding.pry
 end
 
 def get_occupation(data, hometown)
