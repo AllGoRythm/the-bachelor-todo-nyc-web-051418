@@ -38,7 +38,8 @@ def get_average_age_for_season(data, season)
   collect = []
   data.each do |season, people|
     people.collect do |person|
-        return person["occupation"] if person["hometown"] == hometown
+        collect << person["age"]
     end
   end
+  collect.inject {|sum, the| the + sum} / collect.length
 end
